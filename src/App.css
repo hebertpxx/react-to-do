@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
+    width: 40%;
+    margin: 2em auto;
+    background-color: #394049;
+    border-radius: 5px;
+    color: #FFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.to-do-header {
+    padding: 0.5em;
+    border-bottom: 1px solid #2C3035;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.to-do-header h1 {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-to-do {
+    margin: 0 2em;
+    padding: 1em;
+    border-bottom: 1px solid #2C3035;
 }
 
-.App-link {
-  color: #61dafb;
+.form-to-do h2, .list-to-do h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: .7em;
+    margin-bottom: .4em;
+}
+
+.form-control input {
+    padding: .5em;
+    border: 1px solid #222;
+    border-radius: 2px;
+    color: #DFDFDF;
+    background-color: #2C3035;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1em;
+    display: block;
+    color: #EEE;
+    background-color: #333;
+    border: 1px solid #222;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-to-do {
+    margin: 1em 2em;
+    padding: 0 1em 2em;
+}
+
+.list-to-do h2 {
+    margin-bottom: 0;
+}
+
+.list-to-do p {
+    text-align: center;
+}
+
+.to-do {
+    padding: 1em 0;
+    border-bottom: 1px solid #444;
+}
+
+.to-do h3 {
+    margin-bottom: .5em;
+}
+
+.to-do-done {
+    text-decoration: line-through;
+    color: rgb(120, 201, 255)
+}
+
+.to-do p {
+    text-align: left;
+    font-style: italic;
+    font-size: .7em;
+    margin-bottom: 1.5em;
+}
+
+.to-do svg {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 1em;
+    transition: .5s;
+}
+
+.to-do svg:hover {
+    color: rgb(120, 201, 255);
+}
+
+.loading {
+    margin: 5px;
+    color: #FFF;
+    font-size: 14px;
 }
